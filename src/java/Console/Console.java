@@ -62,9 +62,11 @@ public class Console {
         String password = sc.next();
         if (password.equals("admin")) { //later add some password guard!!!
             System.out.println("You've logged as admin!");
+            log.info("Admin logged in.");
             admin = true;
         }
         else{
+            log.warn("Unsuccessful try to log as admin");
             System.out.println("Incorrect password.");
         }
         System.out.print("Enter any symbol to continue...");
@@ -76,14 +78,14 @@ public class Console {
     public void manageFlights(){
         System.out.print("Choose flight to manage\n>> ");
 
-        System.out.println("***THIS PART INCOMPLETE***\n");
+        log.warn("***THIS PART INCOMPLETE***\n");
     }
 
     public void showFlights(){
         System.out.print("\nFlights:\n------\n");
         /*for(int i = 0; i < ...; i++){...}*/
         //get flights from service
-        System.out.println("***THIS PART INCOMPLETE***\n");
+        log.warn("***THIS PART INCOMPLETE***\n");
         System.out.print("\n------\n");
     }
 
