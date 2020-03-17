@@ -13,13 +13,14 @@ public class Console {
         Console console = new Console(); //variables creating
         String menuPart1 = "\"Меню\""
                 + "\n------\n"
-                + "1. Show all flights;\n"
-                + "2. Log in as Admin;\n";
-        String menuPart2Admin = "3. Manage flights;\n"
-                + "4. Exit.\n"
+                + "1. Show all flights;\n";
+        String menuPart2 = "2. Log in as Admin;\n"
+                + "3. Exit.\n"
                 + "------\n"
                 +"Choose menu item\n>> ";
-        String menuPart2 = "3. Exit.\n"
+        String menuPart2Admin = "2. Logout;\n"
+                + "3. Manage flights;\n"
+                + "4. Exit.\n"
                 + "------\n"
                 +"Choose menu item\n>> ";
         console.menu(false, menuPart1, menuPart2, menuPart2Admin);
@@ -43,7 +44,7 @@ public class Console {
                     //complete service required
                     break;
                 case 2: {
-                    admin = logInAsAdmin();
+                    admin = logInOutAsAdmin(admin);
                     break;
                 }
                 case 3: {
@@ -56,8 +57,16 @@ public class Console {
         }
     }
 
-    private boolean logInAsAdmin(){
-        boolean admin = false;
+    private boolean logInOutAsAdmin(boolean admin){
+        if (admin){ //case when admin want to logout
+            System.out.println("Now you logged as usual user");
+            log.info("Admin logout");
+            System.out.print("Enter any symbol to continue...");
+            sc.next();
+            System.out.println();
+            return false;
+        }
+        //when you press log in
         System.out.print("\nEnter password\n>> ");
         String password = sc.next();
         if (password.equals("admin")) { //later add some password guard!!!

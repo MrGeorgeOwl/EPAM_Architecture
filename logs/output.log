@@ -1,0 +1,12 @@
+10:09:13.795 [main] ERROR Console.Console - IS IT WORKING
+10:09:32.845 [main] ERROR Console.Console - IS IT WORKING
+10:09:32.849 [main] DEBUG Console.Console - asdasdasd
+10:10:12.335 [main] INFO  Console.Console - Admin logged in.
+10:10:24.332 [main] WARN  Console.Console - Unsuccessful try to log as admin
+10:10:37.241 [main] INFO  Console.Console - Admin logged in.
+10:20:18.670 [main] INFO  Console.Console - Admin logged in.
+10:20:22.245 [main] INFO  Console.Console - Admin logout
+10:20:46.515 [main] INFO  Console.Console - Admin logged in.
+10:20:52.595 [main] WARN  Console.Console - ***THIS PART INCOMPLETE***
+
+10:20:54.185 [main] INFO  Console.Console - Admin logout
