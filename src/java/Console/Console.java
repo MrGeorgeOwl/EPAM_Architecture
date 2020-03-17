@@ -6,8 +6,8 @@ import org.apache.logging.log4j.Logger;
 import java.util.Scanner;
 
 public class Console {
-    public static Logger log = LogManager.getLogger(Console.class.getName());
-    static Scanner sc = new Scanner(System.in);
+    public final static Logger log = LogManager.getLogger(Console.class.getName());
+    static final Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
         Console console = new Console(); //variables creating
@@ -27,7 +27,7 @@ public class Console {
     }
 
     public void menu(boolean admin, String menuPart1
-            , String menuPart2, String menuPart2Admin/*service array of class*/) {
+            , String menuPart2, String menuPart2Admin/* + service array of class later*/) {
         int choose = -1;
         int chooseExit = 4;
         while(choose != chooseExit){
@@ -40,6 +40,7 @@ public class Console {
 
             switch (choose) {
                 case 1:
+                    showFlights();
                     //get all flights from service
                     //complete service required
                     break;
@@ -69,7 +70,7 @@ public class Console {
         //when you press log in
         System.out.print("\nEnter password\n>> ");
         String password = sc.next();
-        if (password.equals("admin")) { //later add some password guard!!!
+        if (password.equals("admin")) { //maybe later add some guard
             System.out.println("You've logged as admin!");
             log.info("Admin logged in.");
             admin = true;
@@ -86,7 +87,7 @@ public class Console {
 
     public void manageFlights(){
         System.out.print("Choose flight to manage\n>> ");
-
+        /*...*/
         log.warn("***THIS PART INCOMPLETE***\n");
     }
 

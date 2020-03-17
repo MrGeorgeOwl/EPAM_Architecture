@@ -10,3 +10,10 @@
 10:20:52.595 [main] WARN  Console.Console - ***THIS PART INCOMPLETE***
 
 10:20:54.185 [main] INFO  Console.Console - Admin logout
+10:36:24.585 [main] WARN  Console.Console - Unsuccessful try to log as admin
+10:36:28.252 [main] INFO  Console.Console - Admin logged in.
+10:36:31.203 [main] WARN  Console.Console - ***THIS PART INCOMPLETE***
+
+10:36:32.088 [main] WARN  Console.Console - ***THIS PART INCOMPLETE***
+
+10:36:33.550 [main] INFO  Console.Console - Admin logout
