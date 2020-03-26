@@ -1,7 +1,7 @@
 package service;
 
 import dao.entities.FlightEntity;
-import presentation.DTO.FlightDTO;
+import presentation.dto.FlightDTO;
 
 import java.util.Date;
 
